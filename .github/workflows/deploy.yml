@@ -36,6 +36,7 @@ jobs:
       - name: Build Frontend Application
         working-directory: ./frontend
         env:
+          NODE_ENV: production
           VITE_API_URL: https://upper-official-backend.onrender.com
         run: |
           npm run build
